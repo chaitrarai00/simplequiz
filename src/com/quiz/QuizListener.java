@@ -20,7 +20,7 @@ public class QuizListener implements ServletContextListener{
 			PreparedStatement ps1=null;
 			ResultSet rs=null;
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","Bhambhole@6114");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","root");
 			ps1=con.prepareStatement("SELECT * FROM QUIZCONTACT");
 			rs=ps1.executeQuery();
 			if(rs.next()) {
